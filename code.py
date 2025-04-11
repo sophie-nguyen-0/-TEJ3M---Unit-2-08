@@ -25,6 +25,7 @@ potentionmeter = AnalogIn(board.GP26)
 my_servo = servo.Servo(pwm, min_pulse = 650, max_pulse = 2500)
 
 while True:
+    print((potentionmeter.value))
     potentiometer_value = potentionmeter.value
     print(potentiometer_value)
 
